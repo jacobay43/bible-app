@@ -1,0 +1,181 @@
+<Bible@Screen>:
+	name: 'books'
+	root: root
+	id: _bible
+	ScrollView:
+		size_hint_x: None
+		pos_hint: {'center_x':.5}
+		width: box.width
+		BoxLayout:
+			id: box
+			padding: dp(10)
+			size_hint: None,None
+			size: self.minimum_size
+			spacing: dp(10)
+			orientation: 'vertical'
+			pos_hint: {'center_x':.5}
+			#BoxLayout:
+			#orientation: 'vertical'
+			#cols: 3
+			#rows: 22
+			MDFillRoundFlatButton:
+				text: 'Genesis'
+				book_number: 0
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Exodus'
+				book_number: 1
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Leveticus'
+				book_number: 2
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Numbers'
+				book_number: 3
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Deuteronomy'
+				book_number: 4
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Joshua'
+				book_number: 5
+				on_press: root.display(self.book_number)
+				
+			MDFillRoundFlatButton:
+				text: 'Judges'
+				book_number: 6
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Ruth'
+				book_number: 7
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'I Samuel'
+				book_number: 8
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'II Samuel'
+				book_number: 9
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'I Kings'
+				book_number: 10
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'II Kings'
+				book_number: 11
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'I Chronicles'
+				book_number: 12
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'II Chronicles'
+				book_number: 13
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Ezra'
+				book_number: 14
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Nehemiah'
+				book_number: 15
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Esther'
+				book_number: 16
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Job'
+				book_number: 17
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Psalms'
+				book_number: 18
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Proverbs'
+				book_number: 19
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Ecclesiastes'
+				book_number: 20
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Songs of Solomon'
+				book_number: 21
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Isaiah'
+				book_number: 22
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Jeremiah'
+				book_number: 23
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Lamentations'
+				book_number: 24
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Ezekiel'
+				book_number: 25
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Daniel'
+				book_number: 26
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Hosea'
+				book_number: 27
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Joel'
+				book_number: 28
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Amos'
+				book_number: 29
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Obadiah'
+				book_number: 30
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Jonah'
+				book_number: 31
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Micah'
+				book_number: 32
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Nahum'
+				book_number: 33
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Habakkuk'
+				book_number: 34
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Zephaniah'
+				book_number: 35
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Haggai'
+				book_number: 36
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Zechariah'
+				book_number: 37
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Malachi'
+				book_number: 38
+				on_press: root.display(self.book_number)
+			MDFillRoundFlatButton:
+				text: 'Matthew'
+				book_number: 39
+				on_press: root.display(self.book_number)

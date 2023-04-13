@@ -1,0 +1,47 @@
+#:import display display
+<Display@Screen>:
+	name: 'display'
+	root: root
+	id: _display
+	text_display: _text_display
+	BoxLayout:
+		orientation: 'vertical'
+		padding: dp(10)
+		spacing: dp(10)
+		BoxLayout:
+			#rows: 1
+			orientation: 'horizontal'
+			spacing: dp(10)
+			size_hint_y: .1
+			#pos_hint: {'center_x':.5}
+			MDRectangleFlatButton:
+				icon: 'arrow-left'
+				text: 'previous'
+				#size_hint_y: .1
+				#size_hint_x: .1
+				on_release: _display.previous_chapter()
+			MDRectangleFlatButton:
+				text: 'Books'
+				on_release: _display.go_to_books()
+			MDRectangleFlatButton:
+				icon: 'arrow-right'
+				text: 'next'
+				#size_hint_y: .1
+				#size_hint_x: .1
+				on_release: _display.next_chapter()
+		ScrollView:
+			do_scroll_x: False
+			do_scroll_y: True
+			#pos_hint: {'top':.88}
+			size_hint_y: .9
+			MDLabel:
+				id: _text_display
+				color: 0,0,0,1
+				size_hint_y: None
+				halign: 'left'
+				text_size: self.width,None
+				size: self.texture_size
+				height: self.texture_size[1]
+				padding: 10,10
+				markup: True
+				text: 'None'

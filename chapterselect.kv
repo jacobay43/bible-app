@@ -1,0 +1,34 @@
+#:import chapterselect chapterselect
+<TextInput>:
+	multiline: False
+<ChapterSelect@Screen>:
+	name: 'chapterselect'
+	root: root
+	id: _chapter_select
+	book: 0
+	BoxLayout:
+		orientation: "vertical"
+		#cols: 2
+		padding: dp(10)
+		spacing: dp(10)
+		BoxLayout:
+			orientation: 'horizontal'
+			MDLabel:
+				color: 0,0,0,1
+				text: 'Chapter'				
+				size_hint_y: .1
+				halign: 'center'
+			MDTextField:
+				id: _chapter
+				#size_hint_y: .1
+				hint_text: 'Chapter number'
+				required: True
+				helper_text_mode: "on_error"
+		#BoxLayout:
+			#orientation: 'horizontal'
+		MDFloatingActionButton:
+			icon: 'check'
+			on_release: _chapter_select.search(_chapter_select.book,_chapter.text)
+		MDFloatingActionButton:
+			icon: 'arrow-left'
+			on_release: _chapter_select.back()
